@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::middleware(['Auth'])->prefix('admin')->group(function () {
-  
+Route::middleware(['auth'])->prefix('admin')->group(function () {
+    Route::get('/podcast/form/view', [App\Http\Controllers\AdminController::class, 'podcastForm'])->name('podcast.form.view');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

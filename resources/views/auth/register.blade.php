@@ -84,9 +84,9 @@ a:hover {
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center">
-                        <a class="text-rose-li mr-1" href="/register">Sign up</a>
+                        <a class="text-rose mr-1" href="/register">Sign up</a>
                         <span class="text-warning">|</span>
-                        <a class="text-rose ml-1" href="/login">Login</a>
+                        <a class="text-rose-li ml-1" href="/login">Login</a>
                     </h1>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -142,6 +142,10 @@ a:hover {
                                     </button>
                                 </div>
                             </div>
+                            <a class="btn btn-link d-block "
+                                        href="/podcast/view">
+                                        podcast view
+                                    </a>
                         </div>
                     </form>
                 </div>

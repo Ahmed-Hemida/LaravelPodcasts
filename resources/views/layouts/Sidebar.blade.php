@@ -1,4 +1,4 @@
-<div class="w-5 h-100 position-absolute bg-dark">
+<div class="w-100 h-100 position-static start-10 bg-dark">
    
         <div class="">
             <img src="https://cdn.podu.me/img/favicon/favicon.ico" class="rounded-circle w-60 mt-3 mx-auto d-block">

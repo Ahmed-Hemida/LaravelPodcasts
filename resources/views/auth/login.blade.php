@@ -1,13 +1,7 @@
 @extends('layouts.app')
 @section('style')
 <style>
-html {
-    height: 100%;
-    margin: 0;
-}
-::placeholder {
-  color:#ec1b52!important;
-}
+
 body {
     background: url('https://podu.me/img/login_bg_new.png');
     height: 100%;
@@ -17,42 +11,16 @@ body {
     background-size: cover;
 }
 
-.form-control:focus {
-    /* box-shadow: 0 0 0 0.25rem #fbd0db !important; */
-    box-shadow: none !important;
-    background: #F9F9F9 !important;
-}
+
 
 .rounded {
     border-radius: 100px !important;
 }
 
-.form-control {
-    color: #ec1b52 !important;
-    text-align: center;
-    caret-color: #ec1b52;
-    border: none;
-    background: #F9F9F9;
-    padding: 10px;
-}
 
-.bg-rose {
-    background: #ec1b52;
-}
 
-.text-rose {
-    color: #ec1b52;
-}
 .card{
     margin-top:5%;
-}
-
-.text-rose-li {
-    color: #fbd0db;
-}
-
-a {
-    text-decoration: none;
 }
 
 a:hover {
@@ -83,9 +51,9 @@ a:hover {
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center">
-                        <a class="text-rose mr-1"  href="/register">Sign up</a>
+                        <a class="text-rose-li mr-1"  href="/register">Sign up</a>
                         <span class="text-warning">|</span>
-                        <a class="text-rose-li ml-1"href="/login">Login</a>
+                        <a class="text-rose ml-1"href="/login">Login</a>
                     </h1>
                     <form method="POST" action="{{ route('login') }}" class="">
                         @csrf
@@ -126,6 +94,10 @@ a:hover {
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                     @endif
+                                    <a class="btn btn-link d-block "
+                                        href="/podcast/view">
+                                        podcast view
+                                    </a>
                                 </div>
                             </div>
                         </div>

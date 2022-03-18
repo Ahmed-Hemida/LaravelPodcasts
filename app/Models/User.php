@@ -41,4 +41,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function ownPodcast()
+    {
+        return $this->belongsToMany('App\Models\podcast','podcast_authors','user_id','podcast_id');
+    }
 }

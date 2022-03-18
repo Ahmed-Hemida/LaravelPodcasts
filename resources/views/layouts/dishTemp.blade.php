@@ -12,7 +12,9 @@
 
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,16 +30,10 @@
 </head>
 
 <body class="w-100">
-    <div class="row">
-        <div class="col-1 w-5">
-            @include('layouts.Sidebar')
-        </div>
-        <div class="col-11 w-95">
-            <div class="h-100 w-100 position-relative">
-                @include('layouts.navbar')
-                @yield('content')
-            </div>
-        </div>
+
+    <div class="h-100 w-100 position-relative">
+        @include('layouts.navbar')
+        @yield('content')
     </div>
 </body>
 
